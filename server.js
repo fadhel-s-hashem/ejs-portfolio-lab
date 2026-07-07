@@ -133,6 +133,6 @@ app.get('/projects/:projectId', function(req,res){
   })
     
 
-app.listen(4000, function(){
+app.listen(3000, function(){
     console.log('listening to port 3000')
 })
