@@ -1,0 +1,27 @@
+{
+  "name": "ejs-portfolio-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadhel-s-hashem/ejs-portfolio-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fadhel-s-hashem/ejs-portfolio-lab/issues"
+  },
+  "homepage": "https://github.com/fadhel-s-hashem/ejs-portfolio-lab#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "morgan": "^1.11.0"
+  }
+}
