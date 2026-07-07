@@ -1,6 +1,7 @@
 //bring express into our server
 const express = require('express')
 const morgan = require('morgan')
+const path = require('path')
 
 const skills = [
   {
@@ -51,7 +52,7 @@ const skills = [
 const projects = [
   {
     id: 1,
-    image: '/images/screenshot.png',
+    image: '/images/Memory Game.png',
     title: 'Memory Game',
     description: 'A browser-based game built with HTML, CSS, and JavaScript.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -65,7 +66,7 @@ const projects = [
   {
     id: 2,
     title: 'XO Game',
-    image: '/images/screenshot.png',
+    image: '/images/Screenshot xo.png',
     description: 'A two-player Tic Tac Toe game where users take turns placing X and O.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     features: [
@@ -79,7 +80,7 @@ const projects = [
   {
     id: 3,
     title: 'Rock Paper Scissors',
-    image: '/images/screenshot.png',
+    image: '/images/Screenshot 3.png',
     description: 'A game where the player competes against the computer.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     features: [
@@ -96,6 +97,8 @@ const projects = [
 
 // actuall use express
 const app = express ()
+
+app.use(express.static(path.join(__dirname, "public")))
 
 app.use(morgan('dev'))
 
