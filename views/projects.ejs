@@ -1,14 +1,36 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>projects</title>
-    </head>
-    <%- include('./partials/nav') %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+</head>
+<%- include('./partials/nav') %>
+
     <body>
 
-        <h1> hello </h1>
-        
+        <ul>
+            <% projects.forEach(function(item){ %>
+
+                <li>
+                <h1><a href=""> <%= item.title %> </a></h1>
+                <br>
+                <p> <%= item.description %></p>
+            
+                <p> <%= item.technologies %></p>
+                
+                <p> <%= item.features %></p>
+                
+                <p> <%= item.status %></p>
+                
+                <p> <%= item.reflection %></p>
+                </li>
+                
+                <%})%>
+        </ul>
+
+
     </body>
-    </html>
+
+</html>

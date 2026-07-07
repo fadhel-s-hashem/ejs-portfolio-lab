@@ -103,31 +103,31 @@ app.get('/', function(req,res){
     res.render('home.ejs')
 })
 
-app.get('/skill', function(req,res){
-    res.render('skill.ejs')
-})
+app.get('/skills', function(req,res){
 
-app.get('/project', function(req,res){
-    res.render('project.ejs')
-})
-
-app.get('/project/:projectId', function(req,res){
-
-    const index = Number(req.params.projectId)
-
-    const ProjectFilter = projects.id.filter(function(item) {
-    return item.projectId === index;
-
-  })
-    
-    res.render('project-show.ejs' , {
-        projectsShown : index,
-        projectItem : ProjectFilter,
-        projects : projects
+    res.render('skill.ejs' , {
+        skills : skills
     })
 })
 
+app.get('/projects', function(req,res){
 
+
+    res.render('projects.ejs', {
+        projects: projects
+    })
+})
+
+app.get('/projects/:projectId', function(req,res){
+
+    const index = Number(req.params.projectId)
+    
+
+ res.render('project-show.ejs' , {
+        projects : projects
+    })
+  })
+    
 
 app.listen(4000, function(){
     console.log('listening to port 3000')
