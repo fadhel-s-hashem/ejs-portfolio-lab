@@ -8,6 +8,28 @@
 <%- include('./partials/nav') %>
 <body>
 <h1> project-show page </h1>
+
+    <ul>
+            <% projects.forEach(function(item){ %>
+                <%if(item.id === index){%>
+
+                <li>
+                <h1><%= item.title %></h1>
+                <br>
+                <p> <%= item.description %></p>
+            
+                <p> <%= item.technologies %></p>
+                
+                <p> <%= item.features %></p>
+                
+                <p> <%= item.status %></p>
+                
+                <p> <%= item.reflection %></p>
+                </li>
+            <%}%>
+                <%})%>
+        </ul>
+
     
     
 </body>

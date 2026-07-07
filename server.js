@@ -121,10 +121,10 @@ app.get('/projects', function(req,res){
 app.get('/projects/:projectId', function(req,res){
 
     const index = Number(req.params.projectId)
-    
 
  res.render('project-show.ejs' , {
-        projects : projects
+        projects : projects, index:index
+
     })
   })
     
