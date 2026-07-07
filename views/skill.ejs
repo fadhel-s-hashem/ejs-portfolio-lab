@@ -10,11 +10,15 @@
 
     <body>
 
-        <ul>
+        
             <% skills.forEach(function(item){ %>
+                  
+                <section id="skill-card">
+                 <div id="skillName">
+                    <h1 ><%= item.name %></h1>       
+                </div>
 
-                <li>
-                    <h1><%= item.name %></h1>       
+                <div class="SKcard">
                     
                     <p>
                         <%= item.category %>
@@ -26,10 +30,10 @@
                         <%= item.description %>
                     </p>
                    
-                </li>
+                </div>
+                </section>
 
                 <%})%>
-        </ul>
 
     </body>
 

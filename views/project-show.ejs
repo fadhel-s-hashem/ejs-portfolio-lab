@@ -7,14 +7,14 @@
 </head>
 <%- include('./partials/nav') %>
 <body>
-<h1> project-show page </h1>
+<h1> More detail about the project </h1>
 
     <ul>
             <% projects.forEach(function(item){ %>
                 <%if(item.id === index){%>
 
-                <li>
-                <h1><%= item.title %></h1>
+                <li class="detail">
+                <h2><%= item.title %></h1>
                 <br>
                  <img src="<%= item.image %>" alt=""> 
 

@@ -10,15 +10,17 @@
 
     <body>
 
-        <ul>
+        
             <% projects.forEach(function(item){ %>
 
-                <li>
-                <h1><a href="/projects/<%= item.id %>"> <%= item.title %> </a></h1>
-                <br>
-                <img src="<%= item.image %>" alt=""> 
+                
+                  <section id="project-card" class="card">
+                    
+                <button><a href="/projects/<%= item.id %>"> <%= item.title %> </a></button>
+                    
+                <img id="image" src="<%= item.image %>" alt=""> 
 
-                <p> <%= item.description %></p>
+                <!-- <p> <%= item.description %></p>
             
                 <p> <%= item.technologies %></p>
                 
@@ -26,11 +28,11 @@
                 
                 <p> <%= item.status %></p>
                 
-                <p> <%= item.reflection %></p>
-                </li>
+                <p> <%= item.reflection %></p> -->
+                </section>
                 
                 <%})%>
-        </ul>
+        
 
 
     </body>

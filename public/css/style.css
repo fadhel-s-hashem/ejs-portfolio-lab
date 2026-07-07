@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Carter+One&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+
+body {
+    background-color: rgb(240, 235, 235);
+    display: flex;
+      font-family: "Stack Sans Text", sans-serif;
+      flex-direction: column;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+img{
+    width: 40dvh;
+    border: 0.7dvh solid white;
+    border-radius: 2dvh;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+}
+
+nav a {
+    display: inline-block;
+    color: black;
+    border: 3px solid  black;
+    border-radius: 1.5dvh;
+    padding: 0.6dvh;
+    margin: 1dvh;
+    background-color: #eee;
+    
+}
+
+button {
+
+    font-size: 5dvh;
+    border: 0.5dvh solid;
+    border-radius: 3dvh;
+    margin-top: 0.4dvh;
+    background-color: #eee;
+    padding-right: 7dvh;
+    padding-left: 7dvh;
+}
+
+button:hover {
+    border: rgb(194, 186, 186);
+}
+
+a:hover{
+    
+    border: rgb(194, 186, 186);
+  color: rgb(194, 186, 186);
+}
+
+
+.card{
+    border: 1dvh solid;
+    border-radius: 1.5dvh;
+    padding: 1dvh;
+    margin: 1dvh;
+    /* margin-top: 1.8dvh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#project-card{
+    display: flex;
+    flex-direction:column;
+    /* flex-wrap: wrap; */
+    gap: 3dvh;
+    background-color: whitesmoke;
+}
+
+#skill-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SKcard{
+    border: 1dvh solid;
+    border-radius: 1.5dvh;
+    /* padding: 1dvh; */
+    margin: 1dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#skillName{
+   border: 1dvh solid;
+   border-radius: 1.5dvh;
+   width: 25%;
+   padding-top: 5dvh;
+   padding-bottom: 5dvh;
+ /* display: flex;
+ flex-direction: column;
+    align-items: center;  
+     */
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
